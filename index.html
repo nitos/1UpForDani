@@ -5,11 +5,11 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Inserte descripción">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>1UpForDani | Real-life Little Hero Needs Your Help</title>
   <script type="text/javascript" src="js/instafeed.min.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
   <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Martel+Sans|Source+Sans+Pro" rel="stylesheet">
 </head>
 <body class="body">
   <header class="header">
@@ -35,10 +35,12 @@
     <section class="instagram">
       <div class="instagram--container">
         <div class="instagram--help">
-          <h4>Help Spread the Word</h4>
-          <p>Create an illustration of Dani as a character of your favorite videogame. You can share your illustration with the hashtag #1UpForDani on Instagram and it will appear here! </p>
-          <p>Please <a id="copypaste" href="#">copy this text</a> to your instagram post.</p>
-          <p class="texto-oculto">#1UpForDani It's a campaign to help a kid who loves videogames and comics. He needs $900.000 to fight a weird disease. You can donate money at: 1upfordani.com or if you're an illustrator, you can help by doing an illustration of him in a videogame character.</p>
+          <div class="instagram--help-container">
+            <h4>Help Spread the Word</h4>
+            <p>Create an illustration of Dani as a character of your favorite videogame. You can share your illustration with the hashtag #1UpForDani on Instagram and it will appear here! </p>
+            <p>Please <a id="copypaste" href="#">copy this text</a> to your instagram post.</p>
+            <p class="texto-oculto">#1UpForDani It's a campaign to help a kid who loves videogames and comics. He needs $900.000 to fight a weird disease. You can donate money at: 1upfordani.com or if you're an illustrator, you can help by doing an illustration of him in a videogame character.</p>
+          </div>
         </div>
         <div class="instagram--galery">
           <div class="instagram--feed" id="instafeed"></div>
@@ -47,24 +49,29 @@
       </div>
     </section>
     <section class="information">
-      <h3>The legend begins...</h3>
-      <div class="information--text">
-        <p>Dani is an 11 year old boy with a very weird disease known as Pure Red Cell Aplasia (Diamond Blackfan Anemia). It’s so rare that only 35 cases appear per year in the United States and Canada. Basically, less than 0.001% of the world population has it. The Pure Re Cell Aplasia is caused by the failure of the bone marrow in generating red blood cells. </p>
-        <div class="photo">
-          <img src="img/daniel-1upfordani.png" alt="Dani with his epic Zelda T-Shirt and some other videogame characters.">
-          <figcaption>Dani with his epic Zelda T-Shirt and some other videogame characters.</figcaption>
+      <h3 class="information--title">The legend begins...</h3>
+      <div class="information--container">
+        <div class="information--info information--info-1">
+          <p>Dani is an 11 year old boy with a very weird disease known as Pure Red Cell Aplasia (Diamond Blackfan Anemia). It’s so rare that only 35 cases appear per year in the United States and Canada. Basically, less than 0.001% of the world population has it. The Pure Re Cell Aplasia is caused by the failure of the bone marrow in generating red blood cells. </p>
+        </div><div class="information--info information--info-2">
+          <p>Throughout his entire life, Dani has undergone approximately 150 blood transfusions to stay alive. Because he has had so many, the risk of organ failure is high due to iron overload. Also, this has caused an abnormally high number of antibodies to build up in his body make things even more complicated.</p>
+          <p>During 2016 the doctors recommended Palliative care as the only option, an option with many side effects to give him some more time, but not a cure for his illness.</p>
+          <p>Even though this typically means nothing can be done, the Cincinnati Children's hospital had multiple 100% matches for Dani in a non-related donor bone marrow bank, something almost as rare as his disease. So the doctors offered to do the bone marrow transplant, which can completely cure Dani and allow him to live a normal life.</p>
+          <p>This transplant cannot be performed in his birth place, Costa Rica, due to the complexity of Dani's case and the cost is staggering. This means that we need to raise $913,000 to pay for Dani’s bone marrow transplant, as Cincinnati Children's hospital was accepted him as a candidate for bone marrow transplant.</p>
+        </div><div class="information--info information--info-3">
+          <div class="information--photo">
+            <img src="img/daniel-1upfordani.png" alt="Dani with his epic Zelda T-Shirt and some other videogame characters.">
+            <figcaption>Dani with his epic Zelda T-Shirt and some other videogame characters.</figcaption>
+          </div>
+          <a class="button information--button-donar desktop" href="https://www.youcaring.com/alexdanielleoncalvo-734112/donate/general">
+            <span>Donate Now!</span>
+          </a>
         </div>
-        <p>Throughout his entire life, Dani has undergone approximately 150 blood transfusions to stay alive. Because he has had so many, the risk of organ failure is high due to iron overload. Also, this has caused an abnormally high number of antibodies to build up in his body make things even more complicated.</p>
-        <p>During 2016 the doctors recommended Palliative care as the only option, an option with many side effects to give him some more time, but not a cure for his illness.</p>
-        <p>Even though this typically means nothing can be done, the Cincinnati Children's hospital had multiple 100% matches for Dani in a non-related donor bone marrow bank, something almost as rare as his disease. So the doctors offered to do the bone marrow transplant, which can completely cure Dani and allow him to live a normal life.</p>
-        <p>This transplant cannot be performed in his birth place, Costa Rica, due to the complexity of Dani's case and the cost is staggering. This means that we need to raise $913,000 to pay for Dani’s bone marrow transplant, as Cincinnati Children's hospital was accepted him as a candidate for bone marrow transplant.</p>
-        <a class="button hero--button-donar desktop" href="https://www.youcaring.com/alexdanielleoncalvo-734112/donate/general">
-          <span>Donate Now!</span>
-        </a>
       </div>
     </section>
     <section class="news">
       <div class="news--container">
+        <h3>News about Dani</h3>
         <ul class="news--list">
           <li class="news--list-item">
             <a href="http://www.teletica.com/Noticias/160072-Ayuda-para-nino-que-requiere-un-trasplante-de-medula-osea-se-duplico-pero-se-necesita-mas.note.aspx">Ayuda para niño que requiere un trasplante de médula ósea se duplicó, pero se necesita más</a>
@@ -93,15 +100,14 @@
       <p>Want to follow this little hero's journey?</p>
       <p>Follow him on Social Media</p>
       <ul class="footer--social-media">
-        <li><a alt="Facebook page" target="_blank" class="facebook" href="https://www.facebook.com/teamdanihelp/">Facebook</a></li>
-        <li><a alt="Youtube channel" target="_blank" class="youtube" href="https://www.youtube.com/channel/UChllPgshP7vh5K0VQqEc93w">Youtube</a></li>
-        <li><a alt="Instagram" target="_blank" class="ig" href="https://www.instagram.com/el_teamdani/?hl=es">Instagram</a></li>
-        <li><a alt="" target="_blank" class="snapchat" href="https://www.snapchat.com/add/team_dani">Snapchat</a></li>
-
-        </ul>
-      </div>
+        <li><a alt="Facebook page" target="_blank" class="footer--social-link facebook" href="https://www.facebook.com/teamdanihelp/">Facebook</a></li>
+        <li><a alt="Youtube channel" target="_blank" class="footer--social-link youtube" href="https://www.youtube.com/channel/UChllPgshP7vh5K0VQqEc93w">Youtube</a></li>
+        <li><a alt="Instagram account" target="_blank" class="footer--social-link ig" href="https://www.instagram.com/el_teamdani/?hl=es">Instagram</a></li>
+        <li><a alt="Snapchat account" target="_blank" class="footer--social-link snapchat" href="https://www.snapchat.com/add/team_dani">Snapchat</a></li>
+      </ul>
     </div>
-    <script
+  </div>
+  <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
     crossorigin="anonymous"></script>
