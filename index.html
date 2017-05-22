@@ -13,29 +13,8 @@
   <meta property="og:description" content="Real-life Little Hero Needs Your Help to Conquer His Most Fearsome Rival" />
   <title>1UpForDani | Real-life Little Hero Needs Your Help</title>
   <link rel="stylesheet" type="text/css" href="css/styles.css"/>
-  <script type="text/javascript">
-  function loadScript(src) {
-    return new Promise(function (resolve, reject) {
-      var s;
-      s = document.createElement('script');
-      s.src = src;
-      s.onload = resolve;
-      s.onerror = reject;
-      document.head.appendChild(s);
-    });
-  }
-  function loadStylesheet(url) {
-    var s = document.createElement('link');
-    s.type = 'text/css';
-    s.async = true;
-    s.src = url;
-    var x = document.getElementsByTagName('head')[0];
-    x.appendChild(s);
-  }
-  loadStylesheet('css/styles.css');
-  loadScript('js/instafeed.min.js');
-  loadScript('js/scripts.js');
-  </script>
+  <script type="text/javascript" src="js/instafeed.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body class="body">
   <header class="header">
@@ -46,7 +25,7 @@
     <section class="hero">
       <div class="hero--container">
         <div class="hero--image">
-          <img src="img/ilustracion.jpg" alt="">
+          <img src="img/ilustracion.jpg" onload="imageLoad(this)" alt="">
         </div>
         <div class="hero--text">
           <p>Dani is a very special kid. He even got a really weird disease. So weird it only affects approximately 0.001% of the world population. To conquer his rival, he has to relocate to the US to get the treatment he needs.</p>
@@ -89,7 +68,7 @@
           <p>This transplant cannot be performed in his birth place, Costa Rica, due to the complexity of Dani's case and the cost is staggering. This means that we need to raise $913,000 to pay for Dani’s bone marrow transplant, as Cincinnati Children's hospital was accepted him as a candidate for bone marrow transplant.</p>
         </div><div class="information--info information--info-3">
           <div class="information--photo">
-            <img src="img/daniel-1upfordani.jpg" alt="Dani with his epic Zelda T-Shirt and some other videogame characters.">
+            <img src="img/daniel-1upfordani.jpg" onload="imageLoad(this)" alt="Dani with his epic Zelda T-Shirt and some other videogame characters.">
             <figcaption>Dani with his epic Zelda T-Shirt and some other videogame characters.</figcaption>
           </div>
           <a class="button information--button-donar desktop" href="https://www.youcaring.com/alexdanielleoncalvo-734112/donate/general">
