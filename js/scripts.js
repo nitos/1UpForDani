@@ -7,3 +7,11 @@ var feed = new Instafeed({
   template: '<a class="instagram--galery-link" href="{{link}}"><img class="instagram--galery-photo" alt="{{caption}}" src="{{image}}"></a>'
 });
 feed.run();
+
+window.onload = function() {
+  console.log(document.getElementById('copy'));
+  document.getElementById('copy').addEventListener('click', function (e) {
+    this.parentElement.nextSibling.nextSibling.classList.add('show');
+    e.preventDefault();
+  });
+}

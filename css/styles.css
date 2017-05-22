@@ -51,10 +51,10 @@ img {
 figcaption {
   margin: 5px 0; }
 
-.texto-oculto {
+.hide {
   display: none; }
 
-.abierto {
+.show {
   display: block; }
 
 /**
@@ -190,6 +190,10 @@ figcaption {
       display: flex;
       flex-direction: column;
       justify-content: center; } }
+
+.instagram--copy {
+  font-family: "Source+Sans+Pro", sans-serif;
+  font-weight: 700; }
 
 .instagram--help-container {
   background-color: #F7F7F4;
