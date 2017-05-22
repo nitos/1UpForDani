@@ -12,13 +12,13 @@ function instagramLoad(img) {
   wrapper = img.parentElement.parentElement;
   total = wrapper.childElementCount,
   img.parentElement.classList.add('loaded');
-  let loaded = 0;
+  var loaded = 0;
   for (var i = 0; i < total; i++) {
     if (wrapper.childNodes[i].className === "instagram--galery-link loaded") {
       loaded += 1;
     }
   }
-  if(loaded == total){
+  if(loaded == total) {
     wrapper.parentElement.classList.add('loaded');
   }
 };
