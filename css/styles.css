@@ -46,15 +46,7 @@ h4 {
 img {
   width: 100%;
   height: auto;
-  display: block;
-  opacity: 0;
-  -webkit-transition: opacity .5s;
-  -moz-transition: opacity .5s;
-  -ms-transition: opacity .5s;
-  transition: opacity .5s; }
-
-img.loaded {
-  opacity: 1; }
+  display: block; }
 
 figcaption {
   margin: 5px 0;
@@ -160,6 +152,14 @@ figcaption {
   width: 100%;
   flex: 1 0 100%;
   height: auto; }
+  .hero--image img {
+    opacity: 0;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    transition: opacity .5s; }
+    .hero--image img.loaded {
+      opacity: 1; }
   @media (min-width: 800px) {
     .hero--image {
       width: 40%;

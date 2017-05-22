@@ -20,6 +20,16 @@
   width: 100%;
   flex: 1 0 100%;
   height: auto;
+  img {
+    opacity: 0;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -ms-transition: opacity .5s;
+    transition: opacity .5s;
+    &.loaded {
+      opacity: 1;
+    }
+  }
   @media (min-width: 800px) {
     width: 40%;
     flex: 0 1 40%;
