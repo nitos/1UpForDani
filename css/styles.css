@@ -10,24 +10,26 @@ p, span {
   line-height: 1.5em; }
 
 h1 {
-  font-size: 1.2em; }
+  font-size: 45px; }
 
-.body {
+h2 {
+  font-size: 30px; }
+
+.body, html {
   width: 100%;
   margin: 0;
   padding: 0; }
+
+.hero--container, .instagram--container, .information {
+  max-width: 1280px;
+  padding: 0 10px;
+  margin: 0 auto; }
 
 .header {
   margin-bottom: 40px; }
 
 .header--title, .header--subtitle {
   text-align: center; }
-
-.header--subtitle {
-  width: 50%;
-  background-color: #F7E26B;
-  margin: 0 auto;
-  padding: 5px 20px; }
 
 .diamond {
   margin-right: 10px;
@@ -36,25 +38,38 @@ h1 {
   border: 20px solid transparent;
   border-bottom-color: #F7E26B;
   position: relative;
-  top: -53px; }
+  top: -48px; }
   .diamond:after {
     content: '';
     position: absolute;
     left: -20px;
-    top: 79px;
+    top: 82px;
     width: 0;
     height: 0;
     border: 20px solid transparent;
     border-top-color: #F7E26B; }
 
-.hero {
-  background-color: #F7F7F4; }
+.header--subtitle {
+  width: 80%;
+  background-color: #F7E26B;
+  margin: 0 auto;
+  padding: 5px 20px; }
+  @media (min-width: 600px) {
+    .header--subtitle {
+      width: 50%;
+      min-width: 400px; } }
+
+@media (min-width: 600px) {
+  .hero {
+    background-color: #F7F7F4; } }
 
 .button {
   background-color: #EB8931;
-  padding: 20px;
-  text-decoration: none; }
+  text-decoration: none;
+  padding: 20px; }
   .button span {
+    padding: 20px 0 40px 0;
+    display: inline-block;
     color: #FFF; }
     .button span:after {
       margin-left: 10px;
@@ -66,10 +81,33 @@ h1 {
       transform: rotate(-45deg);
       -webkit-transform: rotate(-45deg); }
 
-.hero--container, .instagram--container, .information {
-  max-width: 1280px;
-  padding: 0 10px;
-  margin: 0 auto; }
+.hero--container {
+  display: flex;
+  flex-wrap: wrap; }
+  @media (min-width: 800px) {
+    .hero--container {
+      padding: 0 20px 0 0; } }
+
+.hero--image {
+  width: 100%;
+  flex: 1 0 100%;
+  height: auto; }
+  .hero--image img {
+    width: 100%;
+    height: auto; }
+  @media (min-width: 800px) {
+    .hero--image {
+      width: 40%;
+      flex: 0 1 40%; } }
+
+.hero--text {
+  width: 100%;
+  flex: 1 0 100%; }
+  @media (min-width: 800px) {
+    .hero--text {
+      width: 60%;
+      flex: 1 1 55%;
+      padding-left: 20px; } }
 
 .instagram {
   background-color: #f7e26b; }
