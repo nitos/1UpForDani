@@ -169,13 +169,13 @@ figcaption {
  * Instagram scss file.
 **/
 .instagram {
-  background-color: #f7e26b;
+  background-color: rgba(247, 226, 107, 0.5);
   margin-bottom: 50px; }
 
 .instagram--container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: space-between; }
   @media (min-width: 800px) {
     .instagram--container {
       padding: 0 20px; } }
@@ -186,20 +186,68 @@ figcaption {
     .instagram--help {
       margin-top: 0;
       width: 30%;
-      flex: 0 1 30%; } }
+      flex: 0 1 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
 
 .instagram--help-container {
   background-color: #F7F7F4;
   padding: 20px; }
-  @media (min-width: 800px) {
-    .instagram--help-container {
-      top: 50%;
-      transform: translateY(calc(50% - 40px)); } }
 
-@media (min-width: 800px) {
-  .instagram--galery {
-    width: 65%;
-    flex: 0 1 65%; } }
+.instagram--galery {
+  padding-bottom: 20px; }
+  @media (min-width: 800px) {
+    .instagram--galery {
+      width: 65%;
+      flex: 0 1 calc(70% - 20px);
+      padding-left: 20px;
+      padding-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
+
+.instagram--feed {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FFF;
+  justify-content: space-around;
+  margin-bottom: 20px; }
+  @media (min-width: 800px) {
+    .instagram--feed {
+      margin-bottom: 0; } }
+
+.instagram--galery-link {
+  flex: 0 1 100%;
+  margin: 5px 10px; }
+  @media (min-width: 800px) {
+    .instagram--galery-link {
+      padding: 10px 5px;
+      margin: 0;
+      flex: 0 1 calc(25% - 15px); }
+      .instagram--galery-link:first-child {
+        padding-left: 10px; }
+      .instagram--galery-link:last-child {
+        padding-right: 10px; } }
+
+.instagram--see-more {
+  margin: 20px 0;
+  font-weight: 700; }
+  .instagram--see-more:after {
+    margin-left: 5px;
+    content: '';
+    border: solid #1D1D1D;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    vertical-align: 2px; }
+  .instagram--see-more:hover {
+    color: #616161; }
+    .instagram--see-more:hover:after {
+      border: solid #616161;
+      border-width: 0 3px 3px 0; }
 
 /**
  * Information scss file.
