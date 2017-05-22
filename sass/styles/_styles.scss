@@ -1,0 +1,61 @@
+h1, h2, h3, h4, h5 {
+  font-family: 'Martel Sans', sans-serif;
+}
+
+p {
+  font-family: 'Source+Sans+Pro', sans-serif;
+  font-size: 1.2em; line-height: 1.5em;
+}
+
+.body {
+  width: 100%;
+}
+
+
+
+.instagram {
+  a {
+    color: red;
+  }
+  #instafeed {
+    img {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
+
+.texto-oculto {
+  display: none;
+}
+.abierto {
+  display: block;
+}
+
+@media (min-width: 600px) {
+  .body {
+    width: 80%;
+  }
+  .instagram {
+    width: 100%;
+    margin: 30px 0 10px -10px;
+    padding: 30px;
+    background: #222;
+    color: #fff;
+    display: inline-block;
+    .help {
+      width: 30%;
+      float: left;
+      h2 {
+        margin-top: 0;
+      }
+    }
+    .galery {
+      width: 65%;
+      float: right;
+    }
+  }
+  .legend-begins {
+    width: 60%;
+  }
+}
