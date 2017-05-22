@@ -4,7 +4,11 @@ h1, h2, h3, h4, h5 {font-family: 'Martel Sans', sans-serif; }
 p {font-size: 1.2em; line-height: 1.5em;}
 
 .body, .instagram  {width: 90%; margin: 0 auto; }
+    .instagram a {color: red;}
+    .instagram #instafeed img { width: 100%; max-width: 300px; }
 
+.texto-oculto {display: none;}
+.abierto {display: block;}
 
 @media (min-width: 600px) {
 
@@ -15,7 +19,6 @@ p {font-size: 1.2em; line-height: 1.5em;}
 
     .instagram .help {width: 30%; float: left;}
     .instagram .help h2 {margin-top: 0;}
-    .instagram .galeria { width: 80%; float: left;}
-    .instagram .galeria a {color: red;}
+    .instagram .galeria { width: 65%; float: right;}
 
   }

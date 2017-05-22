@@ -26,6 +26,11 @@
     <div class="help">
       <h2>Help Spread the Word</h2>
       <p>Create an illustration of Dani as a character of your favorite videogame. You can share your illustration with the hashtag #1UpForDani on Instagram and it will appear here! </p>
+
+      <p>Please <a id="copypaste" href="#">copy this text</a> to your instagram post.</p>
+
+       <p class="texto-oculto">#1UpForDani It's a campaign to help a kid who loves videogames and comics. He needs $900.000 to fight a weird disease. You can donate money at: 1upfordani.com or if you're an illustrator, you can help by doing an illustration of him in a videogame character.</p>
+
     </div>
     <div class="galeria">
       <div id="instafeed"></div>
@@ -41,5 +46,16 @@
     <a class="cta donar desktop" href="">Donate Now!</a>
   </section>
   </body>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+<script>    
+     $('#copypaste').on('click', function(e) {
+      $('.texto-oculto').toggleClass("abierto"); //you can list several class names 
+      e.preventDefault();
+    });
+</script>
 </body>
 </html>
