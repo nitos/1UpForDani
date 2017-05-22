@@ -1,0 +1,55 @@
+/**
+ * Footer scss file.
+**/
+
+.footer {
+  padding: 45px;
+  p {
+    margin: 0;
+    line-height: 1.2;
+    font-family: $martel;
+  }
+}
+
+.footer--social-media {
+  padding: 0;
+  display: inline-block;
+  li {
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+.footer--social-media {
+  margin: 25px 0 0 0;
+}
+
+.footer--social-link {
+  text-indent: 100%;
+  overflow: hidden;
+  background: url('../img/socialmedia.png') no-repeat 0 0;
+  content: '';
+  display: inline-block;
+  position: relative;
+}
+
+.facebook {
+  width: 18px;
+  height: 34px;
+}
+.youtube {
+  background-position: -45px 0;
+  width: 50px;
+  height: 34px;
+}
+.ig {
+  background-position: -120px 0;
+  width: 35px;
+  height: 34px;
+}
+.snapchat {
+  background-position: -182px 0;
+  width: 37px;
+  height: 34px;
+}

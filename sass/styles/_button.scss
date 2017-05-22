@@ -1,0 +1,36 @@
+/**
+ * Button scss file.
+**/
+
+.button {
+  background-color: $orange;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-bottom: 20px;
+  span {
+    color: $white;
+    &:after {
+      margin-left: 10px;
+      content: '';
+      border: solid $white;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      vertical-align: 2px;
+    }
+  }
+}
+
+.hero--button-donar {
+  float: right;
+  @media (min-width: 800px) {
+    float: left;
+  }
+}
+
+.information--button-donar {
+  margin-top: 30px;
+}

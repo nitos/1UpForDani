@@ -1,6 +1,12 @@
+/**
+ * Mother scss file.
+**/
 @import url("https://fonts.googleapis.com/css?family=Martel+Sans:400,700|Source+Sans+Pro:400,700");
 /**
  * Global Variables
+**/
+/**
+ * Fonts and sizes.
 **/
 .body, html {
   width: 100%;
@@ -42,11 +48,26 @@ img {
   height: auto;
   display: block; }
 
+figcaption {
+  margin: 5px 0; }
+
+.texto-oculto {
+  display: none; }
+
+.abierto {
+  display: block; }
+
+/**
+ * Random scss file.
+**/
 .hero--container, .instagram--container, .information, .news--container, .footer--container {
   max-width: 1280px;
   padding: 0 10px;
   margin: 0 auto; }
 
+/**
+ * Header scss file.
+**/
 .header {
   margin-bottom: 40px; }
 
@@ -81,10 +102,9 @@ img {
       width: 50%;
       min-width: 400px; } }
 
-@media (min-width: 600px) {
-  .hero {
-    background-color: #F7F7F4; } }
-
+/**
+ * Button scss file.
+**/
 .button {
   background-color: #EB8931;
   text-decoration: none;
@@ -109,6 +129,16 @@ img {
   @media (min-width: 800px) {
     .hero--button-donar {
       float: left; } }
+
+.information--button-donar {
+  margin-top: 30px; }
+
+/**
+ * Hero scss file.
+**/
+@media (min-width: 600px) {
+  .hero {
+    background-color: #F7F7F4; } }
 
 .hero--container {
   display: flex;
@@ -135,6 +165,9 @@ img {
       flex: 0 1 calc(60% - 20px);
       padding-left: 20px; } }
 
+/**
+ * Instagram scss file.
+**/
 .instagram {
   background-color: #f7e26b;
   margin-bottom: 50px; }
@@ -168,6 +201,9 @@ img {
     width: 65%;
     flex: 0 1 65%; } }
 
+/**
+ * Information scss file.
+**/
 .information {
   display: block;
   position: relative; }
@@ -229,12 +265,9 @@ img {
     .desktop {
       display: inline-block; } }
 
-figcaption {
-  margin: 5px 0; }
-
-.information--button-donar {
-  margin-top: 30px; }
-
+/**
+ * News scss file.
+**/
 .news {
   background-color: #F9F9F9;
   padding: 20px 0; }
@@ -268,6 +301,9 @@ figcaption {
     .news--list-item {
       flex: 0 1 30%; } }
 
+/**
+ * Footer scss file.
+**/
 .footer {
   padding: 45px; }
   .footer p {
@@ -312,9 +348,3 @@ figcaption {
   background-position: -182px 0;
   width: 37px;
   height: 34px; }
-
-.texto-oculto {
-  display: none; }
-
-.abierto {
-  display: block; }

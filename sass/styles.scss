@@ -1,3 +1,18 @@
+/**
+ * Mother scss file.
+**/
+
+// Import fonts.
 @import url('https://fonts.googleapis.com/css?family=Martel+Sans:400,700|Source+Sans+Pro:400,700');
+
+// Import other styles.
 @import 'styles/variables';
-@import 'styles/styles';
+@import 'styles/fonts';
+@import 'styles/layout';
+@import 'styles/header';
+@import 'styles/button';
+@import 'styles/hero';
+@import 'styles/instagram';
+@import 'styles/information';
+@import 'styles/news';
+@import 'styles/footer';

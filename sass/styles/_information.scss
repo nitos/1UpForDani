@@ -1,0 +1,71 @@
+/**
+ * Information scss file.
+**/
+
+.information {
+  display: block;
+  position: relative;
+}
+
+.information--title {
+  padding-right: 1em;
+  border-bottom: 10px solid $yellow;
+  display: inline-block;
+  line-height: 0.3;
+  font-weight: 700;
+}
+
+.information--container {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 800px) {
+    display: block;
+  }
+}
+
+.information--info-1 {
+  order: 1;
+  @media (min-width: 800px) {
+    vertical-align: top;
+  }
+}
+.information--info-2 {
+  order: 3;
+  @media (min-width: 800px) {
+    vertical-align: bottom;
+    vertical-align: top;
+  }
+}
+.information--info-3 {
+  order: 2;
+  @media (min-width: 800px) {
+    width: calc(40% - 20px);
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 20px;
+    margin-top: -210px;
+  }
+  @media (min-width: 874px) {
+    margin-top: -180px;
+  }
+  @media (min-width: 1026px) {
+    margin-top: -155px;
+  }
+  @media (min-width: 1278px) {
+    margin-top: -128px;
+  }
+}
+
+.information--info-1, .information--info-2 {
+  @media (min-width: 800px) {
+    display: inline-block;
+    width: 60%;
+  }
+}
+
+.desktop {
+  display: none;
+  @media (min-width: 800px) {
+    display: inline-block;
+  }
+}

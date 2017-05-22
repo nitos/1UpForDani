@@ -1,0 +1,65 @@
+/**
+ * Fonts and sizes.
+**/
+
+// Basic styles.
+.body, html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: $dark;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $martel;
+}
+
+p, span, figcaption {
+  font-family: $source;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+a {
+  font-family: $martel;
+  color: $dark;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 20px;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  margin: 5px 0;
+}
+
+.texto-oculto {
+  display: none;
+}
+.abierto {
+  display: block;
+}

@@ -1,0 +1,42 @@
+/**
+ * Header scss file.
+**/
+
+.header {
+  margin-bottom: 40px;
+}
+
+.header--title, .header--subtitle {
+  text-align: center;
+}
+
+.diamond {
+  margin-right: 10px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-bottom-color: $yellow;
+  position: relative;
+  top: -48px;
+  &:after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 75px;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: $yellow;
+  }
+}
+
+.header--subtitle {
+  width: 80%;
+  background-color: $yellow;
+  margin: 0 auto;
+  padding: 5px 20px;
+  @media (min-width: 600px) {
+    width: 50%;
+    min-width: 400px;
+  }
+}

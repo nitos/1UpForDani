@@ -1,0 +1,36 @@
+/**
+ * Hero scss file.
+**/
+
+.hero {
+  @media (min-width: 600px) {
+    background-color: $grey2;
+  }
+}
+
+.hero--container {
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: 800px) {
+    padding: 0 20px 0 0;
+  }
+}
+
+.hero--image {
+  width: 100%;
+  flex: 1 0 100%;
+  height: auto;
+  @media (min-width: 800px) {
+    width: 40%;
+    flex: 0 1 40%;
+  }
+}
+.hero--text {
+  width: 100%;
+  flex: 1 1 100%;
+  @media (min-width: 800px) {
+    width: 55%;
+    flex: 0 1 calc(60% - 20px);
+    padding-left: 20px;
+  }
+}

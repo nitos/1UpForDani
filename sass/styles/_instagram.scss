@@ -1,0 +1,42 @@
+/**
+ * Instagram scss file.
+**/
+
+.instagram {
+  background-color: rgba($yellow, 30%);
+  margin-bottom: 50px;
+}
+
+.instagram--container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  @media (min-width: 800px) {
+    padding: 0 20px;
+  }
+}
+
+.instagram--help {
+  margin-top: 20px;
+  @media (min-width: 800px) {
+    margin-top: 0;
+    width: 30%;
+    flex: 0 1 30%;
+  }
+}
+
+.instagram--help-container {
+  background-color: $grey2;
+  padding: 20px;
+  @media (min-width: 800px) {
+    top: 50%;
+    transform: translateY(calc(50% - 40px));
+  }
+}
+
+.instagram--galery {
+  @media (min-width: 800px) {
+    width: 65%;
+    flex: 0 1 65%;
+  }
+}
