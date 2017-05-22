@@ -12,9 +12,30 @@
   <meta property="og:image" content="http://1upfordani.com/img/daniel-1upfordani.jpg" />
   <meta property="og:description" content="Real-life Little Hero Needs Your Help to Conquer His Most Fearsome Rival" />
   <title>1UpForDani | Real-life Little Hero Needs Your Help</title>
-  <script type="text/javascript" src="js/instafeed.min.js"></script>
-  <script type="text/javascript" src="js/scripts.js"></script>
   <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+  <script type="text/javascript">
+  function loadScript(src) {
+    return new Promise(function (resolve, reject) {
+      var s;
+      s = document.createElement('script');
+      s.src = src;
+      s.onload = resolve;
+      s.onerror = reject;
+      document.head.appendChild(s);
+    });
+  }
+  function loadStylesheet(url) {
+    var s = document.createElement('link');
+    s.type = 'text/css';
+    s.async = true;
+    s.src = url;
+    var x = document.getElementsByTagName('head')[0];
+    x.appendChild(s);
+  }
+  loadStylesheet('css/styles.css');
+  loadScript('js/instafeed.min.js');
+  loadScript('js/scripts.js');
+  </script>
 </head>
 <body class="body">
   <header class="header">
