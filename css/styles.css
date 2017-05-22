@@ -7,6 +7,8 @@ p {font-size: 1.2em; line-height: 1.5em;}
     .instagram a {color: red;}
     .instagram #instafeed img { width: 100%; max-width: 300px; }
 
+	.legend-begins img {width: 100%; max-width: 500px;}
+
 .texto-oculto {display: none;}
 .abierto {display: block;}
 
@@ -20,5 +22,8 @@ p {font-size: 1.2em; line-height: 1.5em;}
     .instagram .help {width: 30%; float: left;}
     .instagram .help h2 {margin-top: 0;}
     .instagram .galeria { width: 65%; float: right;}
+	
+	.legend-begins { width: 60%;  }
+	.photo { position: absolute; right: 10%;; width: 30%; margin-top: -180px; }
 
   }
