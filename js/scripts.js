@@ -32,4 +32,5 @@ window.onload = function() {
     this.parentElement.nextSibling.nextSibling.classList.add('show');
     e.preventDefault();
   });
+  var clipboard = new Clipboard('#copy');
 }
