@@ -9,7 +9,6 @@ var feed = new Instafeed({
 feed.run();
 
 window.onload = function() {
-  console.log(document.getElementById('copy'));
   document.getElementById('copy').addEventListener('click', function (e) {
     this.parentElement.nextSibling.nextSibling.classList.add('show');
     e.preventDefault();
