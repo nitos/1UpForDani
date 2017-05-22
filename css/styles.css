@@ -72,6 +72,19 @@ figcaption {
 .header {
   margin-bottom: 40px; }
 
+.header--container {
+  padding: 30px 0;
+  background-color: #003f28;
+  margin-top: -30px; }
+
+.header--title img {
+  max-width: 400px;
+  width: 80%;
+  display: inline-block; }
+  @media (min-width: 500px) {
+    .header--title img {
+      width: 100%; } }
+
 .header--title, .header--subtitle {
   text-align: center; }
 
@@ -80,7 +93,7 @@ figcaption {
   width: 0;
   height: 0;
   border: 20px solid transparent;
-  border-bottom-color: #F7E26B;
+  border-bottom-color: #b6f241;
   position: relative;
   top: -48px; }
   .diamond:after {
@@ -91,27 +104,35 @@ figcaption {
     width: 0;
     height: 0;
     border: 20px solid transparent;
-    border-top-color: #F7E26B; }
+    border-top-color: #b6f241; }
 
 .header--subtitle {
   width: 80%;
-  background-color: #F7E26B;
   margin: 0 auto;
-  padding: 5px 20px; }
-  @media (min-width: 600px) {
+  padding: 5px 20px;
+  color: #b6f241;
+  font-size: 1.7em;
+  line-height: 1.4em; }
+  @media (min-width: 500px) {
     .header--subtitle {
-      width: 50%;
+      font-size: 2.5em; } }
+  @media (min-width: 700px) {
+    .header--subtitle {
+      width: 60%;
       min-width: 400px; } }
 
 /**
  * Button scss file.
 **/
 .button {
-  background-color: #EB8931;
+  background-color: #003f28;
   text-decoration: none;
   padding: 15px 20px;
   display: inline-block;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  transition: 1s; }
+  .button:hover {
+    background-color: #3ec035; }
   .button span {
     color: #FFF; }
     .button span:after {
@@ -132,21 +153,20 @@ figcaption {
       float: left; } }
 
 .information--button-donar {
-  margin-top: 30px; }
+  margin-top: 10px; }
 
 /**
  * Hero scss file.
 **/
-@media (min-width: 600px) {
-  .hero {
-    background-color: #F7F7F4; } }
+.hero {
+  margin-bottom: 40px; }
 
 .hero--container {
   display: flex;
   flex-wrap: wrap; }
   @media (min-width: 800px) {
     .hero--container {
-      padding: 0 20px 0 0; } }
+      padding: 0 20px 0 20px; } }
 
 .hero--image {
   width: 100%;
@@ -167,7 +187,8 @@ figcaption {
 
 .hero--text {
   width: 100%;
-  flex: 1 1 100%; }
+  flex: 1 1 100%;
+  font-size: 1.2em; }
   @media (min-width: 800px) {
     .hero--text {
       width: 55%;
@@ -178,7 +199,7 @@ figcaption {
  * Instagram scss file.
 **/
 .instagram {
-  background-color: rgba(247, 226, 107, 0.5);
+  background-color: rgba(182, 242, 65, 0.5);
   margin-bottom: 50px; }
 
 .instagram--container {
@@ -275,7 +296,7 @@ figcaption {
 
 .information--title {
   padding-right: 1em;
-  border-bottom: 10px solid #F7E26B;
+  border-bottom: 10px solid #b6f241;
   display: inline-block;
   line-height: 0.3;
   font-weight: 700; }
@@ -373,7 +394,7 @@ figcaption {
   padding: 40px; }
   .footer p {
     margin: 0;
-    line-height: 1.2;
+    line-height: 1.5em;
     font-family: "Martel Sans", sans-serif; }
 
 .footer--social-media {
@@ -382,7 +403,7 @@ figcaption {
   .footer--social-media li {
     display: inline-block;
     float: left;
-    margin-right: 10px; }
+    margin-right: 20px; }
 
 .footer--social-media {
   margin: 25px 0 0 0; }

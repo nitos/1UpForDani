@@ -10,14 +10,14 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./css'));
 });
 
-gulp.task('sass:watch', function () {
-  gulp.watch('./sass/**/*.scss .js/**/*.js', ['sass']);
-});
-
 gulp.task('scripts', function() {
   return gulp.src('./js/*.js')
     .pipe(concat('scripts.js'))
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('default', [ 'sass', 'sass:watch', 'scripts']);
+gulp.task('watch', function () {
+  gulp.watch(['./sass/**/*.scss', './js/**.js'], ['sass', 'scripts']);
+});
+
+gulp.task('default', [ 'sass', 'scripts', 'watch']);
