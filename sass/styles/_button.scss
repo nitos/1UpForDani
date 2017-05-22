@@ -3,11 +3,17 @@
 **/
 
 .button {
-  background-color: $orange;
+  background-color: $green;
   text-decoration: none;
   padding: 15px 20px;
   display: inline-block;
   margin-bottom: 20px;
+  transition: 1s;
+
+  &:hover {
+    background-color: $green3;
+  }
+
   span {
     color: $white;
     &:after {
@@ -32,5 +38,5 @@
 }
 
 .information--button-donar {
-  margin-top: 30px;
+  margin-top: 10px;
 }
