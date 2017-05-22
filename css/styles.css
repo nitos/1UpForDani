@@ -231,7 +231,7 @@ figcaption {
         padding-right: 10px; } }
 
 .instagram--see-more {
-  margin: 20px 0;
+  margin-top: 20px;
   font-weight: 700; }
   .instagram--see-more:after {
     margin-left: 5px;
