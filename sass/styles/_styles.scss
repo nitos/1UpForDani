@@ -4,13 +4,22 @@ h1, h2, h3, h4, h5 {
 
 p, span {
   font-family: 'Source+Sans+Pro', sans-serif;
-  font-size: 1.2em; line-height: 1.5em;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 1.2em;
 }
 
 .body {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+.header {
+  margin-bottom: 40px;
 }
 
 .header--title, .header--subtitle {
@@ -67,10 +76,30 @@ p, span {
   }
 }
 
+.hero--container, .instagram--container, .information {
+  max-width: 1280px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
 .hero--image {
 
 }
+.hero--text {
 
+}
+
+.instagram {
+  background-color: rgba($yellow, 30%);
+}
+
+.instagram--help {
+  background-color: $grey2;
+}
+
+.news {
+  background-color: $grey1;
+}
 
 
 
@@ -100,7 +129,6 @@ p, span {
     margin: 30px 0 10px -10px;
     padding: 30px;
     background: #222;
-    color: #fff;
     display: inline-block;
     .help {
       width: 30%;
