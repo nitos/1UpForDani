@@ -1,6 +1,6 @@
 var feed = new Instafeed({
   get: 'user',
-  resolution: 'low_resolution',
+  resolution: 'standard_resolution',
   accessToken: '511310839.25c76fb.73881ce9bd904c0bb4040697ec2ae234',
   userId: '5495440910',
   limit: 4,
