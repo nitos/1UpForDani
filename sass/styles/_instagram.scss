@@ -46,8 +46,7 @@
   @media (min-width: 800px) {
     width: 65%;
     flex: 0 1 calc(70% - 20px);
-    padding-left: 20px;
-    padding-bottom: 0;
+    padding: 20px 0 20px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,7 +86,7 @@
 }
 
 .instagram--see-more {
-  margin-top: 20px;
+  margin-top: 10px;
   font-weight: 700;
   &:after {
     margin-left: 5px;
